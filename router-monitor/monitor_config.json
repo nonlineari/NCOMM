@@ -1,0 +1,36 @@
+{
+  "network": {
+    "subnet": "10.0.10.0/24",
+    "gateway": "10.0.10.1",
+    "ssid": "NCOMM-Isolated",
+    "dhcp_range": {
+      "start": "10.0.10.100",
+      "end": "10.0.10.150"
+    }
+  },
+  "known_devices": [
+    {
+      "mac": "5e:2a:38:fa:f5:de",
+      "name": "Machine 2",
+      "trusted": true
+    },
+    {
+      "mac": "a6:93:19:81:59:d7",
+      "name": "Machine 1N",
+      "trusted": true
+    }
+  ],
+  "scan": {
+    "interval_seconds": 60,
+    "nmap_flags": "-sn",
+    "deep_scan_unknown": true,
+    "deep_scan_flags": "-sV -O --script=banner"
+  },
+  "alerts": {
+    "log_file": "logs/intruder_log.jsonl",
+    "alert_on_unknown_device": true,
+    "alert_on_new_port": true,
+    "snapshot_file": "logs/network_snapshot.json",
+    "max_log_size_mb": 50
+  }
+}

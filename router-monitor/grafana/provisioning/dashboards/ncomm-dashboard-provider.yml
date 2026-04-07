@@ -1,0 +1,11 @@
+apiVersion: 1
+providers:
+  - name: NCOMM Router Monitor
+    orgId: 1
+    folder: NCOMM Security
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /Users/nonlineari/Projects/NCOMM/router-monitor/grafana/dashboards

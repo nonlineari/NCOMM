@@ -1,0 +1,8 @@
+logs/*.log
+logs/*.json
+logs/*.jsonl
+logs/*.sqlite
+logs/*.sqlite-*
+logs/*.pid
+grafana/data/
+grafana/logs/

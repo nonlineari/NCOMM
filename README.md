@@ -80,6 +80,7 @@ NCOMM/
 ├── usbc-bridge-monitor.sh          # USB-C/Thunderbolt bridge monitor
 ├── wifi-master-slave-sim.sh        # WiFi topology simulation
 ├── spr-setup.sh                    # Secure Point Router setup
+├── router-monitor/                 # Router intrusion monitor + Grafana interface
 ├── spr-config.txt                  # SPR configuration
 ├── router-configs/                 # Router configuration profiles
 │   ├── generic-config.txt
@@ -136,6 +137,30 @@ NCOMM supports multiple physical connection types. See [NETWORK-TOPOLOGIES.md](N
 - **WiFi (same network)** — Wireless, both machines have internet
 - **USB-C + Internet Sharing** — Machine 2 acts as gateway
 - **Dual Connection** — Bridge + WiFi simultaneously for redundancy
+
+## Router Monitor Deployment
+
+The repository includes a self-contained router monitoring stack in `router-monitor/`.
+
+### Deploy
+
+```bash
+./router-monitor/start_router_monitor_stack.sh
+```
+
+### Verify
+
+- Dashboard: `http://127.0.0.1:3000/d/ncomm-router-security/ncomm-router-security-monitor`
+- Monitor API: `http://127.0.0.1:8199/api/summary`
+- Grafana health: `http://127.0.0.1:3000/api/health`
+
+### Stop
+
+```bash
+./router-monitor/stop_router_monitor_stack.sh
+```
+
+Full deployment details, Linux/WSL notes, and override options are in `router-monitor/README.md`.
 
 ## Protocol Layer
 

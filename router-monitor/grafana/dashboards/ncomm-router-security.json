@@ -1,0 +1,670 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "unknown_devices",
+              "text": "unknown_devices",
+              "type": "number"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/summary"
+        }
+      ],
+      "title": "Unknown Devices Now",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "unique_intruders_all_time",
+              "text": "unique_intruders_all_time",
+              "type": "number"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/summary"
+        }
+      ],
+      "title": "Unique Intruders Seen",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "total_alerts_all_time",
+              "text": "total_alerts_all_time",
+              "type": "number"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/summary"
+        }
+      ],
+      "title": "Total Alerts",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "hosts_up",
+              "text": "hosts_up",
+              "type": "number"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/summary"
+        }
+      ],
+      "title": "Hosts Up",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 12,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 5
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "time",
+              "text": "time",
+              "type": "timestamp"
+            },
+            {
+              "selector": "known",
+              "text": "known",
+              "type": "number"
+            },
+            {
+              "selector": "unknown",
+              "text": "unknown",
+              "type": "number"
+            },
+            {
+              "selector": "total",
+              "text": "total",
+              "type": "number"
+            }
+          ],
+          "format": "timeseries",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/timeline"
+        }
+      ],
+      "title": "Known vs Unknown Devices Over Time",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 13
+      },
+      "id": 6,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "show": false
+        },
+        "showHeader": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "device_name",
+              "text": "device_name",
+              "type": "string"
+            },
+            {
+              "selector": "ip",
+              "text": "ip",
+              "type": "string"
+            },
+            {
+              "selector": "mac",
+              "text": "mac",
+              "type": "string"
+            },
+            {
+              "selector": "vendor",
+              "text": "vendor",
+              "type": "string"
+            },
+            {
+              "selector": "hostname",
+              "text": "hostname",
+              "type": "string"
+            },
+            {
+              "selector": "os_guess",
+              "text": "os_guess",
+              "type": "string"
+            },
+            {
+              "selector": "open_ports",
+              "text": "open_ports",
+              "type": "string"
+            },
+            {
+              "selector": "scan_time",
+              "text": "scan_time",
+              "type": "timestamp"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/latest-devices"
+        }
+      ],
+      "title": "Current Devices",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
+      "id": 7,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "show": false
+        },
+        "showHeader": true
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "first_seen",
+              "text": "first_seen",
+              "type": "timestamp"
+            },
+            {
+              "selector": "last_seen",
+              "text": "last_seen",
+              "type": "timestamp"
+            },
+            {
+              "selector": "times_seen",
+              "text": "times_seen",
+              "type": "number"
+            },
+            {
+              "selector": "ip",
+              "text": "ip",
+              "type": "string"
+            },
+            {
+              "selector": "mac",
+              "text": "mac",
+              "type": "string"
+            },
+            {
+              "selector": "vendor",
+              "text": "vendor",
+              "type": "string"
+            },
+            {
+              "selector": "hostname",
+              "text": "hostname",
+              "type": "string"
+            },
+            {
+              "selector": "os_guess",
+              "text": "os_guess",
+              "type": "string"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/intruders"
+        }
+      ],
+      "title": "Intruders Seen",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ncomm-infinity"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 23
+      },
+      "id": 8,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "ts"
+          }
+        ]
+      },
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "ts",
+              "text": "ts",
+              "type": "timestamp"
+            },
+            {
+              "selector": "severity",
+              "text": "severity",
+              "type": "string"
+            },
+            {
+              "selector": "ip",
+              "text": "ip",
+              "type": "string"
+            },
+            {
+              "selector": "mac",
+              "text": "mac",
+              "type": "string"
+            },
+            {
+              "selector": "message",
+              "text": "message",
+              "type": "string"
+            }
+          ],
+          "format": "table",
+          "parser": "backend",
+          "refId": "A",
+          "source": "url",
+          "type": "json",
+          "url": "http://127.0.0.1:8199/api/alerts?limit=200"
+        }
+      ],
+      "title": "Alert Feed",
+      "type": "table"
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 41,
+  "tags": [
+    "ncomm",
+    "security",
+    "router",
+    "intrusion-detection"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "NCOMM Router Security Monitor",
+  "uid": "ncomm-router-security",
+  "version": 1,
+  "weekStart": ""
+}

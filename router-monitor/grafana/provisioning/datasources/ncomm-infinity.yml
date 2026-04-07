@@ -1,0 +1,16 @@
+apiVersion: 1
+datasources:
+  - name: NCOMM Infinity
+    uid: ncomm-infinity
+    type: yesoreyeram-infinity-datasource
+    access: proxy
+    isDefault: true
+    editable: true
+    jsonData:
+      auth_method: none
+      allowedHosts:
+        - http://127.0.0.1:8199
+        - http://localhost:8199
+      customHealthCheckEnabled: true
+      customHealthCheckUrl: http://127.0.0.1:8199/health
+      timeoutInSeconds: 10
