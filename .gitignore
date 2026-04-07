@@ -28,6 +28,9 @@ m2l_output/
 # Logs
 *.log
 
+# Local config with real credentials (use spr-config.example.txt as template)
+spr-config.txt
+
 # Archive (original V1 docs)
 archive/
 
