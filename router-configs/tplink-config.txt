@@ -1,0 +1,33 @@
+# TP-Link Router Configuration
+
+Login: http://192.168.0.1 or http://tplinkwifi.net
+User: admin / Password: admin (or password on label)
+
+Navigation Path:
+
+1. Network → LAN
+   - IP Address: 10.0.10.1
+   - Save
+
+2. DHCP → DHCP Settings
+   - DHCP Server: Enable
+   - Start IP: 10.0.10.100
+   - End IP: 10.0.10.150
+   - Save
+
+3. Wireless → Wireless Settings
+   - Wireless Network Name: NCOMM-Isolated
+   - Hide SSID: Optional
+   - Save
+
+4. Wireless → Wireless Security
+   - Security Type: WPA/WPA2-Personal
+   - Password: ncomm2024secure
+   - Save
+
+5. Wireless → Wireless MAC Filtering
+   - MAC Address Filtering: Enabled
+   - Filtering Rules: Allow the stations specified
+   - Add Entry: 5e:2a:38:fa:f5:de (Description: Machine 2)
+   - Add Entry: a6:93:19:81:59:d7 (Description: Machine 1N)
+   - Save

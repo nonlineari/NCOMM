@@ -1,0 +1,20 @@
+# SPR Configuration
+# Generated: Sat 17 Jan 2026 08:22:27 HKT
+
+# Network Configuration
+SPR_NETWORK=10.0.10.0/24
+SPR_GATEWAY=10.0.10.1
+SPR_DHCP_START=10.0.10.100
+SPR_DHCP_END=10.0.10.150
+
+# WiFi Configuration
+SPR_SSID=NCOMM-Isolated
+SPR_PASSWORD=<REDACTED>
+
+# Machine MAC Addresses (whitelist)
+MACHINE2_MAC=<REDACTED>
+MACHINE1N_MAC=<REDACTED>
+
+# Status
+SETUP_DATE=Sat 17 Jan 2026 08:22:27 HKT
+STATUS=configured

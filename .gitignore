@@ -1,0 +1,36 @@
+# Media files
+*.mp4
+*.srt
+*.m4a
+*.vtt
+*.tsv
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# R
+.Rhistory
+.RData
+
+# Output directories
+len_output/
+m2l_output/
+
+# Logs
+*.log
+
+# Archive (original V1 docs)
+archive/
+
+# Misc
+.DS_Store
+NCOMM Version 2*Plan.md

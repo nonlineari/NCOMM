@@ -1,0 +1,35 @@
+# Generic Router Configuration Template
+# Copy these settings into your router's admin interface
+
+[LAN Settings]
+Router IP Address: 10.0.10.1
+Subnet Mask: 255.255.255.0
+DHCP Server: Enabled
+DHCP Start IP: 10.0.10.100
+DHCP End IP: 10.0.10.150
+DNS Server: 10.0.10.1 (router will handle)
+
+[WiFi Settings]
+SSID: NCOMM-Isolated
+Password: ncomm2024secure
+Security Mode: WPA2-PSK or WPA3
+Channel: Auto (or use 1, 6, 11 for 2.4GHz)
+Hide SSID: Optional (Yes for extra security)
+
+[MAC Filtering]
+Enable MAC Address Filtering: Yes
+Filtering Mode: Whitelist (Allow Listed Only)
+
+Allowed MAC Addresses:
+1. 5e:2a:38:fa:f5:de (Machine 2)
+2. a6:93:19:81:59:d7 (Machine 1N)
+
+[Security Settings]
+WPS: Disabled
+UPnP: Disabled
+Remote Management: Disabled
+Admin Password: [Change from default]
+
+[WAN/Internet]
+WAN Connection: DISCONNECTED
+(Do not connect WAN port - keeps network isolated)

@@ -1,0 +1,29 @@
+# Netgear Router Configuration
+
+Login: http://192.168.1.1 or http://routerlogin.net
+User: admin / Password: password (or on label)
+
+Navigation Path:
+
+1. Advanced → Setup → LAN Setup
+   - IP Address: 10.0.10.1
+   - Apply
+
+2. Advanced → Setup → LAN Setup
+   - Use Router as DHCP Server: Yes
+   - Starting IP: 10.0.10.100
+   - Ending IP: 10.0.10.150
+   - Apply
+
+3. Wireless
+   - Name (SSID): NCOMM-Isolated
+   - Security Options: WPA2-PSK [AES]
+   - Password: ncomm2024secure
+   - Apply
+
+4. Advanced → Security → Access Control
+   - Turn on Access Control: Yes
+   - Access Control Mode: Allow
+   - Add Device: 5e:2a:38:fa:f5:de (Machine 2)
+   - Add Device: a6:93:19:81:59:d7 (Machine 1N)
+   - Apply
