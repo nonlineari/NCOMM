@@ -11,7 +11,7 @@ DNS Server: 10.0.10.1 (router will handle)
 
 [WiFi Settings]
 SSID: NCOMM-Isolated
-Password: ncomm2024secure
+Password: <YOUR_PASSWORD>
 Security Mode: WPA2-PSK or WPA3
 Channel: Auto (or use 1, 6, 11 for 2.4GHz)
 Hide SSID: Optional (Yes for extra security)

@@ -22,7 +22,7 @@ Navigation Path:
 
 4. Wireless → Wireless Security
    - Security Type: WPA/WPA2-Personal
-   - Password: ncomm2024secure
+   - Password: <YOUR_PASSWORD>
    - Save
 
 5. Wireless → Wireless MAC Filtering

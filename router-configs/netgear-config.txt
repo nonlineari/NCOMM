@@ -18,7 +18,7 @@ Navigation Path:
 3. Wireless
    - Name (SSID): NCOMM-Isolated
    - Security Options: WPA2-PSK [AES]
-   - Password: ncomm2024secure
+   - Password: <YOUR_PASSWORD>
    - Apply
 
 4. Advanced → Security → Access Control

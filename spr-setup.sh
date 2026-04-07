@@ -21,7 +21,7 @@ SPR_GATEWAY="10.0.10.1"
 SPR_DHCP_START="10.0.10.100"
 SPR_DHCP_END="10.0.10.150"
 SPR_SSID="NCOMM-Isolated"
-SPR_PASSWORD="ncomm2024secure"
+SPR_PASSWORD="${SPR_PASSWORD:-CHANGE_ME}"
 
 # Machine MAC addresses (will be detected or set)
 MACHINE2_MAC=""
